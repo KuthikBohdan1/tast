@@ -18,7 +18,17 @@ class User(BaseModel):
     name: str
     surname: str
     age: int
+    gender: str
     
+
+@app.get("/users/all")
+async def get_all_users():
+    """
+    Повертає дані про всіхtgtg користувачів
+    """
+    return {
+        "message, hellowerf"
+    }    
 
 @app.get("/users/all")
 async def get_all_users():
